@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Post - API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <h1>Criar Novo Post</h1>
+        
+        <form id="formulario-post">
+            <div class="form-group">
+                <label for="titulo-post">Título do Post</label>
+                <input type="text" id="titulo-post" placeholder="Digite o título aqui..." required>
+            </div>
+            
+            <div class="form-group">
+                <label for="conteudo-post">Conteúdo</label>
+                <textarea id="conteudo-post" placeholder="No que você está pensando?" required></textarea>
+            </div>
+            
+            <button type="submit">Publicar Post</button>
+        </form>
+
+        <section aria-live="polite">
+            <h2>Post Retornado da API:</h2>
+            <article>
+                <h3 id="renderizador-titulo">O título aparecerá aqui...</h3>
+                <p id="renderizador-conteudo">O conteúdo aparecerá aqui...</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
